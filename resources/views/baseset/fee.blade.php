@@ -7,12 +7,12 @@
                 <div class="card card-underline">
                     <div class="card-head">
                         <ul class="nav nav-tabs pull-right" data-toggle="tabs">
-                            <li class="active"><a href="tabs.html#first2">楼盘信息维护</a></li>
-                            <li><a href="tabs.html#second2">楼号信息维护</a></li>
-                            <li><a href="tabs.html#third2">房间信息维护</a></li>
-                            <li><a href="tabs.html#third2">业主信息维护</a></li>
+                            <li class="active"><a href="tabs.html#first2">预缴费用设置</a></li>
+                            <li><a href="tabs.html#second2">停暖费用设置</a></li>
+                            <li><a href="tabs.html#third2">结算费用设置</a></li>
+                            <li><a href="tabs.html#third2">费用分配</a></li>
                         </ul>
-                        <header>楼盘信息</header>
+                        <header>费用信息</header>
                     </div>
                     <div class="card-body tab-content">
                         <div class="tab-pane active" id="first2">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
@@ -25,6 +25,6 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </div>
 @endsection
