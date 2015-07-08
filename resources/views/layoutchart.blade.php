@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+
+
 <head>
     <title>嘉恒同心供热收费系统</title>
 
@@ -11,16 +14,15 @@
     <!-- END META -->
 
     <!-- BEGIN STYLESHEETS -->
-    <link href='../resources/assets/css/modules/materialadmin/css/theme-default/google-fonts.css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
     <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/bootstrap-1422823238.css" />
     <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/materialadmin-1422823243.css" />
     <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/font-awesome.min-1422823239.css" />
     <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/material-design-iconic-font.min-1422823240.css" />
-    <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/libs/rickshaw/rickshaw-1422823372.css" />
     <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/libs/morris/morris.core-1422823370.css" />
-
+    <link type="text/css" rel="stylesheet" href="../resources/assets/css/modules/materialadmin/css/theme-default/libs/rickshaw/rickshaw-1422823372.css" />
     <!-- END STYLESHEETS -->
-
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
@@ -91,14 +93,11 @@
 <!-- BEGIN BASE-->
 <div id="base">
     <!-- BEGIN OFFCANVAS LEFT -->
-    <div class="offcanvas"> </div>
+    <div class="offcanvas"></div><!--end .offcanvas-->
     <!-- END OFFCANVAS LEFT -->
-
     <!-- BEGIN CONTENT-->
     @yield('content')
-
     <!-- END CONTENT -->
-
     <!-- BEGIN MENUBAR-->
     <div id="menubar" class="menubar-inverse ">
         <div class="menubar-fixed-panel">
@@ -110,9 +109,9 @@
 
             <ul id="main-menu" class="gui-controls">
                 <!-- BEGIN DASHBOARD -->
-                <li> <a href="../dashboard/dashboard.html" class="active">
+                <li> <a href="#" class="active">
                         <div class="gui-icon"><i class="md md-home"></i></div>
-                        <span class="title">消息中心</span> </a> </li>
+                        <span class="title"></span> </a> </li>
                 <!--end /menu-li -->
                 <!-- END DASHBOARD -->
 
@@ -134,16 +133,16 @@
 
                 <!-- BEGIN DASHBOARD -->
                 <li class="gui-folder"> <a>
-                        <div class="gui-icon"><i class="md md-business"></i></div>
+                        <div class="gui-icon"><i class="fa fa-group"></i></div>
                         <span class="title">客服管理</span> </a>
                     <!--start submenu -->
                     <ul>
-                        <li><a href="../company/company_list.html" ><span class="title">表数导入</span></a></li>
-                        <li><a href="../company/company_add.html" ><span class="title">供热缴费</span></a></li>
-                        <li><a href="../company/company_add.html" ><span class="title">缴费查询</span></a></li>
-                        <li><a href="../company/company_add.html" ><span class="title">报修申请</span></a></li>
-                        <li><a href="../company/company_add.html" ><span class="title">报修回访</span></a></li>
-                        <li><a href="../company/company_add.html" ><span class="title">报修查询</span></a></li>
+                        <li><a href="import" ><span class="title">表数导入</span></a></li>
+                        <li><a href="pay" ><span class="title">供热缴费</span></a></li>
+                        <li><a href="searchfee" ><span class="title">缴费查询</span></a></li>
+                        <li><a href="repairapply" ><span class="title">报修申请</span></a></li>
+                        <li><a href="repairvisit" ><span class="title">报修回访</span></a></li>
+                        <li><a href="repairsearch" ><span class="title">报修查询</span></a></li>
                     </ul>
                     <!--end /submenu --> </li>
                 <!--end /menu-li -->
@@ -155,10 +154,10 @@
                         <span class="title">工程管理</span> </a>
                     <!--start submenu -->
                     <ul>
-                        <li><a href="../tool/tool_add.html" ><span class="title">人员管理</span></a></li>
-                        <li><a href="../tool/tool_add.html" ><span class="title">报修分派</span></a></li>
-                        <li><a href="../tool/tool_list.html" ><span class="title">报修完工</span></a></li>
-                        <li><a href="../tool/tool_menu.html" ><span class="title">报修查询</span></a></li>
+                        <li><a href="repairperson" ><span class="title">维修人员</span></a></li>
+                        <li><a href="repairassign" ><span class="title">报修分派</span></a></li>
+                        <li><a href="repairfinish" ><span class="title">报修完工</span></a></li>
+                        <li><a href="repairsearch" ><span class="title">报修查询</span></a></li>
                     </ul>
                     <!--end /submenu -->
                 </li>
@@ -167,11 +166,11 @@
 
                 <!-- BEGIN TABLES -->
                 <li class="gui-folder"> <a>
-                        <div class="gui-icon"><i class="fa fa-group"></i></div>
+                        <div class="gui-icon"><i class="md md-business"></i></div>
                         <span class="title">财务管理</span> </a>
                     <!--start submenu -->
                     <ul>
-                        <li><a href="../tool/tool_add.html" ><span class="title">缴费查询</span></a></li>
+                        <li><a href="searchfee" ><span class="title">缴费查询</span></a></li>
                     </ul>
                     <!--end /submenu -->
                 </li>
@@ -186,8 +185,8 @@
                     </a>
                     <!--start submenu -->
                     <ul>
-                        <li><a href="../tool/tool_add.html" ><span class="title">缴费情况</span></a></li>
-                        <li><a href="../tool/tool_list.html" ><span class="title">报修情况</span></a></li>
+                        <li><a href="paychart" ><span class="title">缴费情况</span></a></li>
+                        <li><a href="repairchart" ><span class="title">报修情况</span></a></li>
                     </ul>
                     <!--end /submenu -->
                 </li>
@@ -201,11 +200,10 @@
         <!--end .menubar-scroll-panel-->
     </div>
     <!-- END MENUBAR -->
-</div>
+</div><!--end #base-->
 <!-- END BASE -->
 
 <!-- BEGIN JAVASCRIPT -->
-
 <script src="../resources/assets/js/modules/materialadmin/libs/jquery/jquery-1.11.2.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/libs/bootstrap/bootstrap.min.js"></script>
@@ -216,13 +214,13 @@
 <script src="../resources/assets/js/modules/materialadmin/libs/jquery-knob/jquery.knob.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/libs/sparkline/jquery.sparkline.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<script src="../resources/assets/js/modules/materialadmin/libs/raphael/raphael-min.js"></script>
+<script src="../resources/assets/js/modules/materialadmin/libs/morris.js/morris.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/core/cache/43ef607ee92d94826432d1d6f09372e1.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/libs/rickshaw/rickshaw.min.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script src="../resources/assets/js/modules/materialadmin/core/demo/Demo.js"></script>
-<script src="../resources/assets/js/modules/materialadmin/core/demo/DemoDashboard.js"></script>
-
+<script src="../resources/assets/js/modules/materialadmin/core/demo/DemoCharts.js"></script>
 <!-- END JAVASCRIPT -->
-
 </body>
 </html>

@@ -35,7 +35,7 @@
 	};
 
 	p._createDataTable1 = function() {
-		$('#datatable1').DataTable({
+		$('.datatable1').DataTable({
 			"dom": 'lCfrtip',
 			"order": [],
 			"colVis": {
@@ -53,7 +53,7 @@
 			}
 		});
 
-		$('#datatable1 tbody').on('click', 'tr', function() {
+		$('.datatable1 tbody').on('click', 'tr', function() {
 			$(this).toggleClass('selected');
 		});
 	};

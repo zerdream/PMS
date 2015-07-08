@@ -3,21 +3,10 @@
     <div id="content">
         <section class="style-default-bright">
             <div class="section-header">
-                <h2 class="text-primary">DataTables</h2>
+                <h2 class="text-primary">报修申请</h2>
             </div>
             <div class="section-body">
-
                 <!-- BEGIN DATATABLE 1 -->
-                <div class="row">
-                    <div class="col-md-8">
-                        <article class="margin-bottom-xxl">
-                            <p class="lead">
-                                DataTables is a plug-in for the jQuery Javascript library.
-                                It is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table.
-                            </p>
-                        </article>
-                    </div><!--end .col -->
-                </div><!--end .row -->
                 <div class="row">
                     <div class="col-md-12">
                         <h4>Example 1: Show/hide columns</h4>

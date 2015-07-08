@@ -1,4 +1,4 @@
-<?php  namespace App\Http\Controllers\ServiceCustomer;
+<?php  namespace App\Http\Controllers\ProjectManage;
 
 use App\Http\Controllers\Controller;
 /**
@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
  * Date: 2015/7/7
  * Time: 17:06
  */
-class ImportController extends Controller {
+class RepairAssignController extends Controller {
     public function __construct()
     {
 //        $this->middleware('guest');
@@ -20,6 +20,6 @@ class ImportController extends Controller {
      */
     public function index()
     {
-        return view('servicecustomer\import');
+        return view('projectmanage\repairassign');
     }
 }
